@@ -8,9 +8,7 @@
 
 	Console.WriteLine("Gib eine Rechenart ein: ");
 	foreach (Rechenarten r in Enum.GetValues<Rechenarten>())
-	{
 		Console.WriteLine($"{(int) r}: {r}");
-	}
 	Rechenarten op = Enum.Parse<Rechenarten>(Console.ReadLine());
 
 	switch (op)
