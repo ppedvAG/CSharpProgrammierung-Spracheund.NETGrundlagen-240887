@@ -38,4 +38,3 @@ if (jahr % 400 == 0)
 Console.WriteLine(schaltjahr ? $"{jahr} ist ein Schaltjahr" : $"{jahr} ist kein Schaltjahr");
 
 DateTime.IsLeapYear(jahr);
-https://teams.microsoft.com/l/meetup-join/19%3ameeting_YjZmN2E3ZmUtNzBjZC00ZmU4LWE4MjAtZmRjMzhjYmUwNDA2%40thread.v2/0?context=%7b%22Tid%22%3a%22d044494e-fc77-4ae0-8c6b-8b4520666035%22%2c%22Oid%22%3a%223ffe4726-5471-4d4b-bf80-37b42ecd2116%22%7d
