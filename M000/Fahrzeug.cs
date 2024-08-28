@@ -43,9 +43,9 @@ public class Fahrzeug
 		}
 	}
 
-	public string Info()
+	public virtual string Info()
 	{
-		return $"{Name} kostet {Preis} und {(MotorLaeuft 
+		return $"{Name} kostet {Preis}€ und {(MotorLaeuft 
 			? $"fährt momentan mit {AktV}km/h von {MaxV}km/h."
 			: $"könnte maximal {MaxV}km/h fahren.")}";
 	}
