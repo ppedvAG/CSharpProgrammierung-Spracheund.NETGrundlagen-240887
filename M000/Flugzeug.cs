@@ -13,4 +13,9 @@ public class Flugzeug : Fahrzeug
 	{
 		return base.Info() + $" Es kann auf maximal {MaxFlughoehe} aufsteigen.";
 	}
+
+	public override void Hupen()
+	{
+        Console.WriteLine("");
+    }
 }

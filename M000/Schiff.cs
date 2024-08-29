@@ -13,4 +13,9 @@ public class Schiff : Fahrzeug
 	{
 		return base.Info() + $" Es fährt mit {Treibstoff}";
 	}
+
+	public override void Hupen()
+	{
+        Console.WriteLine("");
+    }
 }
