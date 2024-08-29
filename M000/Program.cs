@@ -57,3 +57,25 @@ foreach (Fahrzeug f in fzg)
 Console.WriteLine($"PKWs: {anzPKW}, Schiffe: {anzSchiffe}, Flugzeuge: {anzFlugzeuge}");
 
 fzg[2].Hupen();
+
+TesteBelade(new Container(), Fahrzeug.GeneriereFahrzeug(""));
+
+///////////////////////////////////////////////
+
+void TesteBelade(object o1, object o2)
+{
+	if (o1 is IBeladbar && o2 is Fahrzeug)
+	{
+		IBeladbar b = (IBeladbar)o1;
+		Fahrzeug f = (Fahrzeug) o2;
+		b.Belade(f);
+	}
+	else if (o2 is IBeladbar beladbar && o1 is Fahrzeug fzg) //Bei is kann ein Variablenname angegeben werden, um eine automatische Umwandlung zu machen
+	{
+		//IBeladbar beladbar = (IBeladbar) o2;
+		//Fahrzeug fzg = (Fahrzeug) o1;
+		beladbar.Belade(fzg);
+	}
+	else
+        Console.WriteLine("Keine Beladung möglich");
+}
