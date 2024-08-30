@@ -1,6 +1,4 @@
-﻿using System.Globalization;
-
-namespace M011;
+﻿namespace M011;
 
 internal class Program
 {

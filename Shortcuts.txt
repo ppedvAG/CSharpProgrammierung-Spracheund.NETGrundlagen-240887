@@ -4,3 +4,4 @@ Strg + D: Derzeitige Zeile kopieren
 Strg + K, Strg + C: Codeblock/einzelne Zeile auskommentieren
 Strg + K, Strg + U: Codeblock/einzelne Zeile einkommentieren
 Strg + K, Strg + D: Code formatieren
+Strg + R, Strg + R: Member an allen Stellen umbenennen
