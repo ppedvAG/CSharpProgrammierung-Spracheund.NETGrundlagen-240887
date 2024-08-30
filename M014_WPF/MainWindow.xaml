@@ -1,0 +1,32 @@
+﻿<Window x:Class="M014_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="450" Width="300"
+		WindowStartupLocation="CenterScreen"
+		Topmost="True">
+    <StackPanel>
+		<TextBlock x:Name="Output" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="40" TextAlignment="Center"/>
+		<Button Content="Mein erster Button" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" Click="Button_Click"/>
+		<TextBox Name="Eingabe"/>
+		<ComboBox Name="Dropdown" SelectionChanged="Dropdown_SelectionChanged"/>
+		<ListBox Name="LB" SelectionChanged="LB_SelectionChanged" SelectionMode="Extended"/>
+		<CheckBox Content="Hallo Welt" IsChecked="True" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+		<RadioButton Content="Hallo RB1" GroupName="RB1"/>
+		<RadioButton Content="Hallo RB1" GroupName="RB1"/>
+		<RadioButton Content="Hallo RB1" GroupName="RB1"/>
+		<Separator/>
+		<RadioButton Content="Hallo RB2" GroupName="RB2"/>
+		<RadioButton Content="Hallo RB2" GroupName="RB2"/>
+		<Button Click="Button_Click_1" Content="Beenden"/>
+		<Menu>
+			<MenuItem Header="Datei">
+				<MenuItem Header="Neu"/>
+				<MenuItem Header="Öffnen"/>
+				<MenuItem Header="Speichern">
+					<MenuItem Header="Speichern unter"/>
+				</MenuItem>
+				<MenuItem Header="Beenden" Click="Button_Click_1"/>
+			</MenuItem>
+		</Menu>
+	</StackPanel>
+</Window>
